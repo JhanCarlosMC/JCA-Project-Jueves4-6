@@ -1,0 +1,44 @@
+/*
+    Estructura de CSS
+
+    selector {
+        propiedad: valor;
+        propiedad2: valor;
+    }
+*/
+/* --------Tipos de Selectores-------------- */
+
+/* Selector Universal/Global */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+/* Selector de tipo/etiqueta */
+p{
+    background-color: red;
+}
+/* Selector de clase */
+.parrrafo-class{
+    background-color: blue;
+}
+/* Selector de ID */
+#parrafo-id{
+    background-color: green;
+}
+
+
+img{
+    height: 150px;
+    width: 150px;
+}
+
+#img-container{
+    width: 500px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#imgTest{
+    width: 100%;
+}
