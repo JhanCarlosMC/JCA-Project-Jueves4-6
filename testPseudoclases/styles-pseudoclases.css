@@ -1,0 +1,11 @@
+.enlace1:hover{
+    color: red;
+}
+
+.enlace2:active{
+    color: blue;
+}
+
+input:focus{
+    background-color: rgb(0, 0, 0);
+}

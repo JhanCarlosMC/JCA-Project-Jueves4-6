@@ -1,0 +1,39 @@
+.container{
+    height: 250px;
+    border: 2px solid black;
+    margin: 10px;
+    padding: 10px;
+}
+
+.box{
+    border: 2px solid black;
+    height: 30px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.block .box{
+    display: block;
+}
+
+.inline .box{
+    display: inline;
+    font-size: 100px;
+}
+
+.none .box{
+    display: none;
+}
+
+.flex{
+    display: flex;
+
+    justify-content: flex-start; /*Ordena los elementos horizontalmente*/
+    align-items: flex-start; /*Ordena los elementos verticalmente*/
+    flex-direction: row; /*Da direccion a los elementos dentro del contendor*/
+    order: 0; /*Ordena elementos especificos en vertical*/
+    align-self: flex-start; /*Ordena elementos especificos en vertical*/
+    flex-wrap: nowrap; /*Permite que los elementos se ajusten dentro del contenedor*/
+    flex-flow: column wrap; /*Agrupo el direction y wrap en una misma propiedad*/
+    align-content: flex-start; /*Ordena las lineas dentro del contenedor*/
+}
