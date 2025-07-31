@@ -1,0 +1,78 @@
+@import "header-nav.css";
+@import "section-aboutme.css";
+@import "section-projects.css";
+
+:root {
+    --color-background: rgba(239, 239, 239, 0.5);
+    --color-background-section: rgb(255, 255, 255);
+    --color-background-section-altern: rgba(191, 191, 191, 0.5);
+    --color-background-header: #1a1a1a;
+    --color-text: #121212;
+    --color-text-altern: #f9f9f9;
+    --color-hover: #383bf3;
+}
+
+/* Reset - Config base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Arial", sans-serif;
+    line-height: 1.6;
+    color: var(--color-text);
+    background-color: var(--color-background);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section-container {
+    padding: 3rem 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.section-container:nth-child(even){
+    background-color: var(--color-background-section);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.section-container:nth-child(odd){
+    background-color: var(--color-background-section-altern);
+}
+
+.section-container h2{
+    font-size: 3rem;
+    font-weight: 600;
+    color: var(--color-text);
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+}
+
+.section-container h2::before{
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    width: 100px;
+    height: 3px;
+    background: linear-gradient(90deg, var(--color-hover), var(--color-hover));
+    transform: translateX(-50%);
+    border-radius: 2px;
+    transition: all 0.5s;
+}
+
+.section-container h2:hover::before{
+    background: linear-gradient(90deg, var(--color-hover), var(--color-text));
+}

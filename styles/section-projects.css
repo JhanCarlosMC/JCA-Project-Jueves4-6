@@ -1,0 +1,26 @@
+#container-projects{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.card-project{
+    background-color: var(--color-background-section);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    padding: 1rem;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.card-project:hover{
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    transform: translateY(-10px);
+}
+
+
+.card-project img{
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
